@@ -1,0 +1,46 @@
+=calcwidth($calcpercentage, $calcminus)
+  width: calc(#{$calcpercentage} - #{$calcminus})
+
+=vendor-prefix($vendorname, $vendorvalue)
+  -ms-#{$vendorname}: #{$vendorvalue}
+  -o-#{$vendorname}: #{$vendorvalue}
+  -moz-#{$vendorname}: #{$vendorvalue}
+  -webkit-#{$vendorname}: #{$vendorvalue}
+  #{$vendorname}: #{$vendorvalue}
+
+=media-query($maxwidth: false, $minwidth: false, $orientation: false)
+  @if $maxwidth and $minwidth and $orientation
+    @media screen and (max-width: $maxwidth) and (min-width: $minwidth) and (orientation: $orientation)
+      @content
+  @else if ($maxwidth) and ($minwidth) and ($orientation == false)
+    @media screen and (max-width: $maxwidth) and (min-width: $minwidth)
+      @content
+
+  @else if ($maxwidth) and ($orientation) and ($minwidth == false)
+    @media screen and (max-width: $maxwidth) and (orientation: $orientation)
+      @content
+
+  @else if ($minwidth) and ($orientation) and ($maxwidth == false)
+    @media screen and (min-width: $minwidth) and (orientation: $orientation)
+      @content
+
+  @else if ($maxwidth) and ($minwidth == false) and ($orientation == false)
+    @media screen and (max-width: $maxwidth)
+      @content
+
+  @else if ($minwidth) and ($orientation == false) and ($maxwidth == false)
+    @media screen and (min-width: $minwidth)
+      @content
+
+  @else if ($orientation) and ($minwidth == false) and ($maxwidth == false)
+    @media screen and (orientation: $orientation)
+      @content
+
+=line-border($color, $top: 10px, $right: 0px, $bottom: 2px, $left: 0px, $style: solid)
+  border:
+    color: $color
+    style: $style
+  border-top-width: $top
+  border-right-width: $right
+  border-bottom-width: $bottom
+  border-left-width: $left
