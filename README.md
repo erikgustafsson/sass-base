@@ -1,2 +1,2 @@
 # sass-base
-The base sass that should be downloaded to each new project
+The base that should be downloaded to each new project
