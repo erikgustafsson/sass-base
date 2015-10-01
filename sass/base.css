@@ -1,3 +1,21 @@
+/* ### Breakpoint definitions */
+@media screen and (max-width: 400px) {
+  @viewport {
+    width: 320px; } }
+html {
+  font-size: 100%;
+  height: 100%;
+  outline: none; }
 
+body {
+  font-size: 16px; }
+
+a {
+  outline: none; }
+
+div.testtest {
+  width: 1.25rem;
+  background: rgba(0, 0, 0, 0.9);
+  width: calc(30% - 20px); }
 
 /*# sourceMappingURL=base.css.map */

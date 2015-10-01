@@ -1,2 +1,21 @@
 @import mixins
 @import variables_default
+@import functions
+
+html
+  font-size: 100% // Avoid using px value as it breaks usability-zooming
+  height: 100%
+  outline: none
+
+body
+  font-size: $base + px
+a
+  outline: none
+
+
+
+// The following is an example how to use the functions and mixins
+div.testtest
+  width: REM(20) //Uses a pixel value and does the rem calculation, do not use 'px'
+  background: RGBA(#000, 0.9) // Hex value + opacity 0-1
+  +calcwidth(30%, $gutter) // Creates width: calc(30% - 16px)

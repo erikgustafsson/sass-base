@@ -1,3 +1,7 @@
+// Basics
+$base: 16 !default
+$unit: rem
+
 // Colors
 $black: #222222 !default
 
@@ -10,16 +14,14 @@ $headingcolor: $black !default
 $linkcolor: #008296 !default
 
 // Fontsizes
-$rem: 16px !default
-$bodyfontsize: $rem !default
+$bodyfontsize: $base !default
 
 // Widths
 $containerwidth: 1010px !default
 $gutter: 20px !default
 $guttertablet: $gutter / 2
 $guttermobile: $gutter / 2
-$guttermobilesmall: $rem * 0.5
-
+$guttermobilesmall: $gutter * 0.5
 
 /* ### Breakpoint definitions */
 @media screen and (max-width: 400px)
