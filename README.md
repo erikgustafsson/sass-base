@@ -35,11 +35,13 @@ Simplify almost all the vendor prefixes in one line. Work for most cases. Does n
 #### SASS usage
 +vendor-prefix("box-sizing", "border-box")
 #### Returns CSS
+```CSS
 -ms-box-sizing: border-box;
 -o-box-sizing: border-box;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
-box-sizing: border-box;
+box-sizing: border-box; 
+```
   
 ## Functions
 ### REM conversion
@@ -50,7 +52,9 @@ This function takes a pixelvalue (unprefixed), divides it with the $base value a
 #### SASS usage
 width: REM(20)
 #### Returns CSS
+```CSS
 width: 1.25rem;
+```
 
 ### RGBA helper
 This function simplifies the rgba-writing. Hex value + opacity 0-1
