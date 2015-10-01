@@ -20,11 +20,11 @@ Add touch-action color to links
 ```
 ### SASS usage
 ```Sass
-+calcwidth(30%, $gutter)
++calcwidth(30%, REM($gutter))
 ```
 ### Returns CSS
 ```CSS
-width: calc(30% - 16px)
+width: calc(30% - 1.25rem);
 ```
 ## Vendor prefix
 Simplify almost all the vendor prefixes in one line. Work for most cases. Does not work for background-gradients as they ar far more complex.

@@ -16,9 +16,9 @@ a
 
 
 
-// The following is an example how to use the functions and mixins
+// The following is an example how to use the functions and mixins. See readme for more info
 div.testtest
-  width: REM(20) //Uses a pixel value and does the rem calculation, do not use 'px'
-  background: RGBA(#000, 0.9) // Hex value + opacity 0-1
-  +calcwidth(30%, $gutter) // Creates width: calc(30% - 16px)
+  width: REM(20)
+  background: RGBA(#000, 0.9)
+  +calcwidth(30%, REM($gutter))
   +vendor-prefix("box-sizing", "border-box")
