@@ -79,5 +79,8 @@ This function simplifies the rgba-writing. Hex value + opacity 0-1
 #### SASS usage
 ```Sass
 background: RGBA(#000, 0.9)
+```
 #### Returns CSS
+```CSS
 background: rgba(0, 0, 0, 0.9);
+```
