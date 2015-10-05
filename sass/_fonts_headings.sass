@@ -1,0 +1,58 @@
+h1
+  color: $font-color-heading
+  margin: 0
+  font-size: REM($base * 2.5)
+  line-height: 2.1
+  margin-bottom: REM($gutter * 0.8125)
+  html.touch &
+    +media-query($maxwidth: $mobile-large)
+      font-size: REM($base * 2.5)
+      line-height: 2.6
+
+h2
+  color: $font-color-heading
+  margin: 0
+  font-size: REM($base * 1.875)
+  line-height: 1.6
+  &.line
+    padding-bottom: REM($gutter * 0.625)
+  html.touch &
+    +media-query($maxwidth: $mobile-large)
+      font-size: REM($base * 1.5)
+      line-height: 1.1
+h3
+  color: $font-color-heading
+  margin: 0
+  font-size: REM($base * 1.1255)
+  line-height: 1
+  margin-bottom: REM($gutter)
+  &.line
+    padding-bottom: REM($base * 0.4)
+  &.row.line
+    margin-bottom: REM($base)
+  html.touch &
+    +media-query($maxwidth: $mobile-large)
+      font-size: REM($base * 1.5)
+      line-height: 1.25
+h4
+  color: $font-color-heading
+  margin: 0
+  font-size: REM($base * 0.9375)
+  line-height: 0.8
+  margin-bottom: REM($gutter)
+  &.line
+    margin: 0
+  .row.line
+    margin-bottom: REM($gutter * 0.875)
+h5
+  color: $font-color-heading
+  margin: 0
+  font-size: REM($base * 0.875)
+  line-height: 0.8
+  margin-top: REM($gutter)
+  margin-bottom: REM($gutter * 0.25)
+  &.line
+    margin: 0
+    padding-bottom: REM($gutter * 0.3)
+  &:first-child
+    margin-top: 0
