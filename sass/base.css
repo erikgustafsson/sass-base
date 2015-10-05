@@ -15,10 +15,29 @@ html {
   outline: none; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: Arial; }
 
 a {
-  outline: none; }
+  outline: none;
+  color: #008296;
+  text-decoration: none; }
+  a:link {
+    color: #008296; }
+  a:hover {
+    color: #00ff00;
+    text-decoration: underline; }
+  a:visited {
+    color: #ff0000; }
+  a img {
+    border: none;
+    float: left; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: none; }
 
 .alignright {
   float: right; }

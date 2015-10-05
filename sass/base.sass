@@ -11,8 +11,27 @@ html
 
 body
   font-size: $base + px
+  font-family: $fontfamily-body
 a
   outline: none
+  color: $linkcolor
+  text-decoration: none
+  &:link
+    color: $linkcolor
+  &:hover
+    color: $linkcolor-hover
+    text-decoration: underline
+  &:visited
+    color: $linkcolor-visited
+  img
+    border: none
+    float: left
+
+img
+  width: 100%
+  max-width: 100%
+  height: auto
+  border: none
 
 .alignright
   float: right
