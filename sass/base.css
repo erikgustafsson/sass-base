@@ -186,6 +186,15 @@ main {
   @media screen and (max-width: 880px) and (min-width: 451px) {
     .span33 {
       width: calc(50% - 1.25rem); } }
+  @media screen and (orientation: landscape) {
+    .span33 {
+      width: calc(75% - 1.25rem); } }
+  @media screen and (max-width: 1000px) {
+    .span33 {
+      width: calc(85% - 1.25rem); } }
+  @media screen and (min-width: 885px) {
+    .span33 {
+      width: calc(95% - 1.25rem); } }
 
 .span35 {
   width: calc(35% - 1.25rem); }
