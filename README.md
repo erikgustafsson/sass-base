@@ -15,7 +15,7 @@ SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the in
   
 # Functions
 ## REM conversion
-This function takes a pixelvalue (unprefixed), divides it with the $base value and returns a $rem value. Do not use 'px'. This is the most used function and mixin.
+This function takes a pixelvalue (unprefixed, do not use 'px'), divides it with the $base value (set in _variables_default.sass) and returns a rem value. This is the most used function and mixin.
 It's not a big thing to change to em, px or percentages in your sass if needed, just ignore this function and modify the other things =)
 ### The function code
 ```Sass
@@ -32,7 +32,7 @@ width: 1.25rem;
 ```
 
 ## RGBA helper
-This function simplifies the rgba-writing. Hex value + opacity 0-1
+This function simplifies the rgba-writing. Enter the Hexadecimal value of the color and the desired opacity value from 0 to 1.
 ### The function code
 ```Sass
 @function RGBA($color, $opacity)
@@ -63,7 +63,7 @@ background: rgba(0, 0, 0, 0.9);
 width: calc(30% - 1.25rem);
 ```
 ## Vendor prefix
-Simplify almost all the vendor prefixes in one line. Work for most cases. Does not work for background-gradients as they ar far more complex.
+Simplifies almost all the vendor prefixes in one line. Work for most cases, except for background-gradients as they are far more complex.
 ### The mixin code
 ```Sass
 =vendor-prefix($vendorname, $vendorvalue)
@@ -86,7 +86,7 @@ Simplify almost all the vendor prefixes in one line. Work for most cases. Does n
 box-sizing: border-box; 
 ```
 ## Line (border)
-Returns a border with the desired width of each border in a shorthand property split on border: and border-width:
+Returns a border with the desired width of each border in a shorthand property split on border: and border-width:. You do need to set all values or the shorthand will not work. Solid is the default value, so if you want dashed see example below.
 ### The mixin code
 ```Sass
 =line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
@@ -96,11 +96,16 @@ Returns a border with the desired width of each border in a shorthand property s
 ### SASS usage
 ```Sass
 +line-border($border-color, 0, 0, 2, 0)
+//
++line-border($border-color, 0, 0, 2, 0, dashed)
 ```
 ### Returns CSS
 ```CSS
 border: #EBEBEB solid;
 border-width: 0rem 0rem 0.125rem 0rem;
+//
+border: #000 dashed;
+border-width: 0.0625rem 0rem 0rem 0.0625rem; 
 ```
 ## Span width
 Returns a calculated width for the base grid, has special if and else to catch 33% widths.
