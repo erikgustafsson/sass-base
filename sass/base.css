@@ -16,7 +16,8 @@ html {
 
 body {
   font-size: 16px;
-  font-family: Arial; }
+  font-family: Arial;
+  background-color: #fff; }
 
 a {
   outline: none;
@@ -38,6 +39,11 @@ img {
   max-width: 100%;
   height: auto;
   border: none; }
+
+iframe {
+  max-width: 100%; }
+  article[role="main"] iframe {
+    width: 100%; }
 
 .alignright {
   float: right; }
@@ -236,6 +242,59 @@ main {
   width: calc(100% - 1.25rem);
   margin-left: 0.625rem;
   margin-right: 0.625rem; }
+
+/* #### Lines */
+.col.line, .col.linedark, .col.linewhite {
+  margin-bottom: 2.5rem; }
+
+.line, .linedark, .linewhite {
+  border-color: #EBEBEB;
+  border-style: solid;
+  border-top-width: 0rem;
+  border-right-width: 0rem;
+  border-bottom-width: 0.00781rem;
+  border-left-width: 0rem; }
+
+.thin {
+  border-color: #EBEBEB;
+  border-style: solid;
+  border-top-width: 0rem;
+  border-right-width: 0rem;
+  border-bottom-width: 0.00391rem;
+  border-left-width: 0rem; }
+
+.thick {
+  border-color: #EBEBEB;
+  border-style: solid;
+  border-top-width: 0rem;
+  border-right-width: 0rem;
+  border-bottom-width: 0.01563rem;
+  border-left-width: 0rem; }
+
+.linedark {
+  border-color: #cccccc; }
+
+.linewhite {
+  border-color: #ffffff; }
+
+.top {
+  border-color: #EBEBEB;
+  border-style: solid;
+  border-top-width: 0.00781rem;
+  border-right-width: 0rem;
+  border-bottom-width: 0rem;
+  border-left-width: 0rem; }
+
+.border {
+  border-color: #EBEBEB;
+  border-style: solid;
+  border-top-width: 0.00781rem;
+  border-right-width: 0.00781rem;
+  border-bottom-width: 0.00781rem;
+  border-left-width: 0.00781rem; }
+
+.row.line, .row.linedark, .row.linewhite {
+  margin-bottom: 2.5rem; }
 
 div.testtest {
   width: 1.25rem;

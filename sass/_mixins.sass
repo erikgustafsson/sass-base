@@ -1,12 +1,14 @@
 =calcwidth($calcpercentage, $calcminus)
   width: calc(#{$calcpercentage} - #{$calcminus})
 
-=vendor-prefix($vendorname, $vendorvalue)
-  -ms-#{$vendorname}: #{$vendorvalue}
-  -o-#{$vendorname}: #{$vendorvalue}
-  -moz-#{$vendorname}: #{$vendorvalue}
-  -webkit-#{$vendorname}: #{$vendorvalue}
-  #{$vendorname}: #{$vendorvalue}
+=line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
+  border:
+    color: $color
+    style: $style
+  border-top-width: REM($top / $base)
+  border-right-width: REM($right / $base)
+  border-bottom-width: REM($bottom / $base)
+  border-left-width: REM($left / $base)
 
 =media-query($maxwidth: false, $minwidth: false, $orientation: false)
   @if $maxwidth and $minwidth and $orientation
@@ -45,3 +47,10 @@
     +calcwidth(#{$width}#{$percent}, REM($margin))
   @else
     +calcwidth(#{$width}#{$percent}, REM($margin))
+
+=vendor-prefix($vendorname, $vendorvalue)
+  -ms-#{$vendorname}: #{$vendorvalue}
+  -o-#{$vendorname}: #{$vendorvalue}
+  -moz-#{$vendorname}: #{$vendorvalue}
+  -webkit-#{$vendorname}: #{$vendorvalue}
+  #{$vendorname}: #{$vendorvalue}

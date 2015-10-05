@@ -1,6 +1,4 @@
-@import mixins
 @import variables_default
-@import functions
 *
   +vendor-prefix("box-sizing", "border-box")
 
@@ -12,6 +10,7 @@ html
 body
   font-size: $base + px
   font-family: $font-family-body
+  background-color: $bg-body
 a
   outline: none
   color: $link-color
@@ -32,11 +31,20 @@ img
   max-width: 100%
   height: auto
   border: none
-
+iframe
+  max-width: 100%
+  article[role="main"] &
+    width: 100%
 .alignright
   float: right
 
 @import structure
+
+
+
+
+
+
 
 // The following is an example how to use the functions and mixins. See readme for more info
 div.testtest

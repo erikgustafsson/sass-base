@@ -1,0 +1,22 @@
+/* #### Lines */
+.col.line
+  margin-bottom: REM($gutter * 2)
+.line
+  +line-border($border-color, 0, 0, 2, 0)
+.thin
+  +line-border($border-color, 0, 0, 1, 0)
+.thick
+  +line-border($border-color, 0, 0, 4, 0)
+.linedark
+  @extend .line
+  border-color: $border-color-dark
+.linewhite
+  @extend .line
+  border-color: $border-color-white
+.top
+  +line-border($border-color, 2, 0, 0, 0)
+.border
+  +line-border($border-color, 2, 2, 2, 2)
+
+.row.line
+  margin-bottom: REM($gutter * 2)
