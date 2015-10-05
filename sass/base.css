@@ -23,7 +23,7 @@ a {
 .container {
   margin: auto;
   width: 100%;
-  max-width: REM(1010)20px;
+  max-width: 64.375rem;
   float: none !important; }
 
 [role="group"] {
@@ -110,7 +110,44 @@ main {
   width: calc(95% - 1.25rem); }
 
 .span100 {
-  width: calc(100% - 1.25rem); }
+  width: calc(100% - 1.25rem);
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+
+.col {
+  float: left;
+  clear: none;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+  @media screen and (max-width: 880px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  @media screen and (max-width: 668px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  @media screen and (max-width: 320px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  .col > .col.span100 {
+    width: 100%; }
+  .col:last-child {
+    float: right; }
+    .col:last-child.last {
+      float: left; }
+  .col:only-child {
+    float: left; }
+  .col.nomargin {
+    margin: 0; }
+  .col.hero {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
+  .col .inner {
+    width: 100%;
+    height: auto; }
 
 div.testtest {
   width: 1.25rem;

@@ -1,7 +1,7 @@
 .container
   margin: auto
   width: 100%
-  max-width: ($containerwidth + $gutter) + px
+  max-width: REM($containerwidth + $gutter)
   float: none !important /* !important since this element should never be floated */
 
 [role="group"]
@@ -22,3 +22,36 @@ main
   margin-bottom: REM($gutter)
 
 @import structure_widths
+
+.col
+  float: left
+  clear: none
+  margin-left: REM($gutter / 2)
+  margin-right: REM($gutter / 2)
+  +media-query($maxwidth: $tablet-large)
+    margin-left: REM($guttertablet)
+    margin-right: REM($guttertablet)
+  +media-query($maxwidth: $mobile-large)
+    margin-left: REM($guttermobile)
+    margin-right: REM($guttermobile)
+  +media-query($maxwidth: $mobile-small)
+    margin-left: REM($guttermobilesmall)
+    margin-right: REM($guttermobilesmall)
+  & > .col
+    &.span100
+      width: 100% /** Nested column should be 100% **/
+  &:last-child
+    float: right
+    &.last
+      float: left /* You can define last to float left */
+  &:only-child
+    float: left
+  &.nomargin
+    margin: 0
+  &.hero
+    margin-left: 0
+    margin-right: 0
+    width: 100%
+  .inner
+    width: 100%
+    height: auto
