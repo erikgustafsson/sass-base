@@ -158,13 +158,13 @@ The mixin takes three arguments and checks if they are applied in the sass-code.
 .span33
   +spanwidth(33)
   +media-query($maxwidth: $tablet-large, $minwidth: $mobile-medium +1) // You do not need to be specific with "$maxwidth:", I just find it easier to read than following examples.
-    +spanwidth(50)
+    width: 50%
   +media-query(false, false, landscape) // To set Orientation set the first two as false
-    +spanwidth(75)
+    width: 55%
   +media-query(1000px) // To set max-width only: Set this value only, Sass ignores the others if no value set (as default value false kicks in)
-    +spanwidth(85)
+    width: 60%
   +media-query(false, 885px) // To set min-width only: Set max-width to false.
-    +spanwidth(95)
+    width: 65%
 ```
 ### Returns CSS
 ```CSS
@@ -172,14 +172,14 @@ The mixin takes three arguments and checks if they are applied in the sass-code.
   width: calc(33.33333% - 1.25rem); }
   @media screen and (max-width: 880px) and (min-width: 451px) {
     .span33 {
-      width: calc(50% - 1.25rem); } }
+      width: 50%; } }
   @media screen and (orientation: landscape) {
     .span33 {
-      width: calc(75% - 1.25rem); } }
+      width: 55%;  } }
   @media screen and (max-width: 1000px) {
     .span33 {
-      width: calc(85% - 1.25rem); } }
+      width: 60%;  } }
   @media screen and (min-width: 885px) {
     .span33 {
-      width: calc(95% - 1.25rem); } }
+      width: 65%;  } }
 ```
