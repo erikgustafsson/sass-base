@@ -240,15 +240,15 @@ main {
 
 .line {
   border: #EBEBEB solid;
-    border-width: 0rem 0rem 0.00781rem 0rem; }
+    border-width: 0rem 0rem 0.125rem 0rem; }
 
 .thin {
   border: #EBEBEB solid;
-    border-width: 0rem 0rem 0.00391rem 0rem; }
+    border-width: 0rem 0rem 0.0625rem 0rem; }
 
 .thick {
   border: #EBEBEB solid;
-    border-width: 0rem 0rem 0.01563rem 0rem; }
+    border-width: 0rem 0rem 0.25rem 0rem; }
 
 .linedark {
   border-color: #cccccc; }
@@ -258,11 +258,11 @@ main {
 
 .top {
   border: #EBEBEB solid;
-    border-width: 0.00781rem 0rem 0rem 0rem; }
+    border-width: 0.125rem 0rem 0rem 0rem; }
 
 .border {
   border: #EBEBEB solid;
-    border-width: 0.00781rem 0.00781rem 0.00781rem 0.00781rem; }
+    border-width: 0.125rem 0.125rem 0.125rem 0.125rem; }
 
 .row.line {
   margin-bottom: 2.5rem; }

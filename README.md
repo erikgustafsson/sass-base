@@ -91,7 +91,7 @@ Returns a border with the desired width of each border in a shorthand property s
 ```Sass
 =line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
   border: $color $style
-    width: REM($top / $base) REM($right / $base) REM($bottom / $base) REM($left / $base)
+    width: REM($top) REM($right) REM($bottom) REM($left)
 ```
 ### SASS usage
 ```Sass
@@ -100,7 +100,7 @@ Returns a border with the desired width of each border in a shorthand property s
 ### Returns CSS
 ```CSS
 border: #EBEBEB solid;
-border-width: 0rem 0rem 0.00781rem 0rem;
+border-width: 0rem 0rem 0.125rem 0rem;
 ```
 ## Span width
 Returns a calculated width for the base grid, has special if and else to catch 33% widths.

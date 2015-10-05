@@ -3,7 +3,7 @@
 
 =line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
   border: $color $style
-    width: REM($top / $base) REM($right / $base) REM($bottom / $base) REM($left / $base)
+    width: REM($top) REM($right) REM($bottom) REM($left)
 
 =media-query($maxwidth: false, $minwidth: false, $orientation: false)
   @if $maxwidth and $minwidth and $orientation
