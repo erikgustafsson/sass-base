@@ -3,7 +3,8 @@
   width: 100%
   max-width: REM($container-width + $gutter)
   float: none !important /* !important since this element should never be floated */
-
+  &.hero
+    max-width: 100%
 [role="group"]
   float: left
   margin-left: REM($gutter / 2)
@@ -27,15 +28,6 @@
       margin-bottom: REM($gutter-mobile * 2)
   &.nomargin:not(.container)
     margin: 0
-
-[role="rowgroup"]
-  float: left
-  width: 100%
-  margin-bottom: REM($gutter)
-  +media-query($maxwidth: $tablet-large)
-    margin-bottom: REM($gutter-tablet)
-  +media-query($maxwidth: $mobile-large)
-    margin-bottom: REM($gutter-mobile)
 main
   overflow: hidden
   padding-top: REM($gutter)

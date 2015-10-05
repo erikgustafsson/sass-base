@@ -53,6 +53,8 @@ iframe {
   width: 100%;
   max-width: 64.375rem;
   float: none !important; }
+  .container.hero {
+    max-width: 100%; }
 
 [role="group"] {
   float: left;
@@ -83,17 +85,6 @@ iframe {
         margin-bottom: 1.25rem; } }
   [role="group"].nomargin:not(.container) {
     margin: 0; }
-
-[role="rowgroup"] {
-  float: left;
-  width: 100%;
-  margin-bottom: 1.25rem; }
-  @media screen and (max-width: 880px) {
-    [role="rowgroup"] {
-      margin-bottom: 0.625rem; } }
-  @media screen and (max-width: 668px) {
-    [role="rowgroup"] {
-      margin-bottom: 0.625rem; } }
 
 main {
   overflow: hidden;
