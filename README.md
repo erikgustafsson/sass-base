@@ -5,13 +5,13 @@ Usage example of Mixins and functions are described in the Readme file.
 SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the indented syntax is harder to find, as usage mostly is bracketed SCSS-coding style, this project will be public and with quite detailed instructions.
 # To-do's:
 ## Basics
-[x] Set up basic sass-files
-[x] Set up example site
-[] Add basic html structure on example site. Consider if excluded in this project or not...
-[] Add media mixin to readme
+- [x] Set up basic sass-files
+- [x] Set up example site
+- [x] Add media mixin to readme
+- [] Add basic html structure on example site. Consider if excluded in this project or not...
 
 ## Details
-[]Add touch-action color to links
+- []Add touch-action color to links
   
 # Functions
 ## REM conversion
