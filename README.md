@@ -15,7 +15,8 @@ SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the in
   
 # Functions
 ## REM conversion
-This function takes a pixelvalue (unprefixed), divides it with the $base value and returns a $rem value. Do not use 'px'.
+This function takes a pixelvalue (unprefixed), divides it with the $base value and returns a $rem value. Do not use 'px'. This is the most used function and mixin.
+It's not a big thing to change to em, px or percentages in your sass if needed, just ignore this function and modify the other things =)
 ### The function code
 ```Sass
 @function REM($value)
