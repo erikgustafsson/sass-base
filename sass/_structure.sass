@@ -6,22 +6,54 @@
 
 [role="group"]
   float: left
+  margin-left: REM($gutter / 2)
+  margin-right: REM($gutter / 2)
+  +calcwidth(100%, REM($gutter))
+  +media-query($maxwidth: $tablet-large)
+    +calcwidth(100%, REM($guttertablet))
+  +media-query($maxwidth: $mobile-large)
+    +calcwidth(100%, REM($guttermobile))
+  +media-query($maxwidth: $tablet-large)
+    margin-left: REM($guttertablet / 2)
+    margin-right: REM($guttertablet / 2)
+  +media-query($maxwidth: $mobile-large)
+    margin-left: REM($guttermobile / 2)
+    margin-right: REM($guttermobile / 2)
+  &:not(.container)
+    margin-bottom: REM($gutter * 2)
+    +media-query($maxwidth: $tablet-large)
+      margin-bottom: REM($guttertablet * 2)
+    +media-query($maxwidth: $mobile-large)
+      margin-bottom: REM($guttermobile * 2)
+  &.nomargin:not(.container)
+    margin: 0
 
 [role="rowgroup"]
   float: left
   width: 100%
   margin-bottom: REM($gutter)
-
+  +media-query($maxwidth: $tablet-large)
+    margin-bottom: REM($guttertablet)
+  +media-query($maxwidth: $mobile-large)
+    margin-bottom: REM($guttermobile)
 main
   overflow: hidden
   padding-top: REM($gutter)
+  +media-query($maxwidth: $tablet-large)
+  margin-top: REM($guttertablet)
+  +media-query($maxwidth: $mobile-large)
+    margin-top: REM($guttermobile)
 
 .row
   float: left
   width: 100%
   margin-bottom: REM($gutter)
-
-@import structure_widths
+  +media-query($maxwidth: $tablet-large)
+    margin-bottom: REM($guttertablet)
+  +media-query($maxwidth: $mobile-large)
+    margin-bottom: REM($guttermobile)
+  &:last-child:not([role="group"])
+    margin-bottom: 0
 
 .col
   float: left
@@ -55,3 +87,22 @@ main
   .inner
     width: 100%
     height: auto
+
+article.col[role=main]
+  +media-query($maxwidth: $tablet-large)
+    +calcwidth(60%, REM($guttertablet * 2))
+  +media-query($maxwidth: $mobile-large)
+    +calcwidth(100%, REM($guttermobile * 2))
+    margin-bottom: REM($guttermobile)
+  +media-query($maxwidth: $mobile-small)
+    +calcwidth(100%, REM($guttermobilesmall * 2))
+
+aside.col[role=complementary]
+  +media-query($maxwidth: $tablet-large)
+    +calcwidth(40%, REM($guttertablet * 2))
+  +media-query($maxwidth: $mobile-large)
+    +calcwidth(100%, REM($guttermobile * 2))
+  +media-query($maxwidth: $mobile-small)
+    +calcwidth(100%, REM($guttermobilesmall * 2))
+
+@import structure_widths

@@ -20,6 +20,9 @@ body {
 a {
   outline: none; }
 
+.alignright {
+  float: right; }
+
 .container {
   margin: auto;
   width: 100%;
@@ -27,21 +30,122 @@ a {
   float: none !important; }
 
 [role="group"] {
-  float: left; }
+  float: left;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  width: calc(100% - 1.25rem); }
+  @media screen and (max-width: 880px) {
+    [role="group"] {
+      width: calc(100% - 0.625rem); } }
+  @media screen and (max-width: 668px) {
+    [role="group"] {
+      width: calc(100% - 0.625rem); } }
+  @media screen and (max-width: 880px) {
+    [role="group"] {
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem; } }
+  @media screen and (max-width: 668px) {
+    [role="group"] {
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem; } }
+  [role="group"]:not(.container) {
+    margin-bottom: 2.5rem; }
+    @media screen and (max-width: 880px) {
+      [role="group"]:not(.container) {
+        margin-bottom: 1.25rem; } }
+    @media screen and (max-width: 668px) {
+      [role="group"]:not(.container) {
+        margin-bottom: 1.25rem; } }
+  [role="group"].nomargin:not(.container) {
+    margin: 0; }
 
 [role="rowgroup"] {
   float: left;
   width: 100%;
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 880px) {
+    [role="rowgroup"] {
+      margin-bottom: 0.625rem; } }
+  @media screen and (max-width: 668px) {
+    [role="rowgroup"] {
+      margin-bottom: 0.625rem; } }
 
 main {
   overflow: hidden;
-  padding-top: 1.25rem; }
+  padding-top: 1.25rem;
+  margin-top: 0.625rem; }
+  @media screen and (max-width: 668px) {
+    main {
+      margin-top: 0.625rem; } }
 
 .row {
   float: left;
   width: 100%;
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 880px) {
+    .row {
+      margin-bottom: 0.625rem; } }
+  @media screen and (max-width: 668px) {
+    .row {
+      margin-bottom: 0.625rem; } }
+  .row:last-child:not([role="group"]) {
+    margin-bottom: 0; }
+
+.col {
+  float: left;
+  clear: none;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+  @media screen and (max-width: 880px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  @media screen and (max-width: 668px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  @media screen and (max-width: 320px) {
+    .col {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; } }
+  .col > .col.span100 {
+    width: 100%; }
+  .col:last-child {
+    float: right; }
+    .col:last-child.last {
+      float: left; }
+  .col:only-child {
+    float: left; }
+  .col.nomargin {
+    margin: 0; }
+  .col.hero {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
+  .col .inner {
+    width: 100%;
+    height: auto; }
+
+@media screen and (max-width: 880px) {
+  article.col[role=main] {
+    width: calc(60% - 1.25rem); } }
+@media screen and (max-width: 668px) {
+  article.col[role=main] {
+    width: calc(100% - 1.25rem);
+    margin-bottom: 0.625rem; } }
+@media screen and (max-width: 320px) {
+  article.col[role=main] {
+    width: calc(100% - 1.25rem); } }
+
+@media screen and (max-width: 880px) {
+  aside.col[role=complementary] {
+    width: calc(40% - 1.25rem); } }
+@media screen and (max-width: 668px) {
+  aside.col[role=complementary] {
+    width: calc(100% - 1.25rem); } }
+@media screen and (max-width: 320px) {
+  aside.col[role=complementary] {
+    width: calc(100% - 1.25rem); } }
 
 .span5 {
   width: calc(5% - 1.25rem); }
@@ -113,41 +217,6 @@ main {
   width: calc(100% - 1.25rem);
   margin-left: 0.625rem;
   margin-right: 0.625rem; }
-
-.col {
-  float: left;
-  clear: none;
-  margin-left: 0.625rem;
-  margin-right: 0.625rem; }
-  @media screen and (max-width: 880px) {
-    .col {
-      margin-left: 0.625rem;
-      margin-right: 0.625rem; } }
-  @media screen and (max-width: 668px) {
-    .col {
-      margin-left: 0.625rem;
-      margin-right: 0.625rem; } }
-  @media screen and (max-width: 320px) {
-    .col {
-      margin-left: 0.625rem;
-      margin-right: 0.625rem; } }
-  .col > .col.span100 {
-    width: 100%; }
-  .col:last-child {
-    float: right; }
-    .col:last-child.last {
-      float: left; }
-  .col:only-child {
-    float: left; }
-  .col.nomargin {
-    margin: 0; }
-  .col.hero {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; }
-  .col .inner {
-    width: 100%;
-    height: auto; }
 
 div.testtest {
   width: 1.25rem;
