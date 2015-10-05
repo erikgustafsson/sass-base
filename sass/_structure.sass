@@ -1,0 +1,24 @@
+.container
+  margin: auto
+  width: 100%
+  max-width: ($containerwidth + $gutter) + px
+  float: none !important /* !important since this element should never be floated */
+
+[role="group"]
+  float: left
+
+[role="rowgroup"]
+  float: left
+  width: 100%
+  margin-bottom: REM($gutter)
+
+main
+  overflow: hidden
+  padding-top: REM($gutter)
+
+.row
+  float: left
+  width: 100%
+  margin-bottom: REM($gutter)
+
+@import structure_widths
