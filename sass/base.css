@@ -22,7 +22,9 @@ body {
 a {
   outline: none;
   color: #008296;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
   a:link {
     color: #008296; }
   a:hover {
@@ -30,6 +32,8 @@ a {
     text-decoration: underline; }
   a:visited {
     color: #ff0000; }
+  a:active {
+    color: #005263; }
   a img {
     border: none;
     float: left; }

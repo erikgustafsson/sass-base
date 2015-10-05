@@ -11,7 +11,7 @@ SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the in
 - [ ] Add basic html structure on example site. Consider if excluded in this project or not...
 
 ## Details
-- [ ] Add touch-action color to links
+- [x] Add touch-action color to links
   
 # Functions
 ## REM conversion
