@@ -1,6 +1,8 @@
 # sass-base
-This sass-base is to be downloaded to each new project. SASS syntax is indented syntax to reduce clutter in SASS-files.
-Usage example of Mixins and functions are described in the Readme file. As the indented syntax is unsual in favor of SCSS-coding style this project is public and detailed.
+This sass-base is to be downloaded to each new project.
+Usage example of Mixins and functions are described in the Readme file.
+## SASS code syntax
+SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the indented syntax is harder to find, as usage mostly is bracketed SCSS-coding style, this project will be public and with quite detailed instructions.
 # To-do's:
 ## Basics
 Set up basic sass-files
