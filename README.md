@@ -85,3 +85,39 @@ Simplify almost all the vendor prefixes in one line. Work for most cases. Does n
 -webkit-box-sizing: border-box;
 box-sizing: border-box; 
 ```
+## Line (border)
+Returns a border with the desired width of each border in a shorthand property split on border: and border-width:
+### The mixin code
+```Sass
+=line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
+  border: $color $style
+    width: REM($top / $base) REM($right / $base) REM($bottom / $base) REM($left / $base)
+```
+### SASS usage
+```Sass
++line-border($border-color, 0, 0, 2, 0)
+```
+### Returns CSS
+```CSS
+border: #EBEBEB solid;
+border-width: 0rem 0rem 0.00781rem 0rem;
+```
+## Span width
+Returns a calculated width for the base grid, has special if and else to catch 33% widths.
+### The mixin code
+```Sass
+=spanwidth($width, $margin: $gutter, $percent: "%")
+  @if $width == 33
+    $width: 33.33333333333334
+  @else if $width == 66
+    $width: 66.666666666666667
+  +calcwidth(#{$width}#{$percent}, REM($margin))
+```
+### SASS usage
+```Sass
++spanwidth(60)
+```
+### Returns CSS
+```CSS
+width: calc(60% - 1.25rem);
+```

@@ -2,13 +2,8 @@
   width: calc(#{$calcpercentage} - #{$calcminus})
 
 =line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
-  border:
-    color: $color
-    style: $style
-  border-top-width: REM($top / $base)
-  border-right-width: REM($right / $base)
-  border-bottom-width: REM($bottom / $base)
-  border-left-width: REM($left / $base)
+  border: $color $style
+    width: REM($top / $base) REM($right / $base) REM($bottom / $base) REM($left / $base)
 
 =media-query($maxwidth: false, $minwidth: false, $orientation: false)
   @if $maxwidth and $minwidth and $orientation
@@ -41,12 +36,9 @@
 =spanwidth($width, $margin: $gutter, $percent: "%")
   @if $width == 33
     $width: 33.33333333333334
-    +calcwidth(#{$width}#{$percent}, REM($margin))
   @else if $width == 66
     $width: 66.666666666666667
-    +calcwidth(#{$width}#{$percent}, REM($margin))
-  @else
-    +calcwidth(#{$width}#{$percent}, REM($margin))
+  +calcwidth(#{$width}#{$percent}, REM($margin))
 
 =vendor-prefix($vendorname, $vendorvalue)
   -ms-#{$vendorname}: #{$vendorvalue}
