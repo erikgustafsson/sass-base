@@ -86,7 +86,8 @@ Simplifies almost all the vendor prefixes in one line. Work for most cases, exce
 box-sizing: border-box; 
 ```
 ## Line (border)
-Returns a border with the desired width of each border in a shorthand property split on border: and border-width:. You do need to set all values or the shorthand will not work. Solid is the default value, so if you want dashed see example below.
+Returns a border with the desired width of each border in a shorthand property split on border: and border-width:. 
+You do need to set all values or the shorthand will not work. Solid is the default value, so if you want as example dashed you need to add that property to the end.
 ### The mixin code
 ```Sass
 =line-border($color, $top: 0, $right: 0, $bottom: 2, $left: 0, $style: solid)
