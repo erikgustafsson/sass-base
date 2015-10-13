@@ -3,6 +3,33 @@ This sass-base is to be downloaded to each new project.
 Usage example of Mixins and functions are described in the Readme file.
 ## SASS code syntax
 SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the indented syntax is harder to find, as usage mostly is bracketed SCSS-coding style, this project will be public and with quite detailed instructions.
+## How to import
+Use the git-clone and clone it using your commandline into your project.
+I put the base in /sass so that the directory becomes /sass/base/.
+```Sass
+@import valross_variables
+@import base/base
+footer
+  .copy
+    text-align: center
+
+#kontakt
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  background: RGBA(#000, 0.7)
+  #kontakt-inner
+    background: #ffffff
+    position: relative
+    top: 30%
+    padding: REM($gutter)
+```
+
+This approach lets me do variables to override the base variables without typing a body tag in my site Sass!
+## How to import into own SASS
+Since I want to do a git pull when changes have been done the base has to be unaltered. I've created a new SASS file called valross.sass.
 # To-do's:
 ## Basics
 - [x] Set up basic sass-files
