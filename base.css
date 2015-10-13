@@ -146,6 +146,9 @@ main {
     width: 100%;
     height: auto; }
 
+.hero {
+  width: 100%; }
+
 @media screen and (max-width: 880px) {
   article.col[role=main] {
     width: calc(60% - 1.25rem); } }
