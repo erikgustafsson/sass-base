@@ -8,6 +8,7 @@ SASS syntax is *indented SASS* syntax to reduce clutter in SASS-files. As the in
 - [x] Set up basic sass-files
 - [x] Set up example site
 - [x] Add media mixin to readme
+- [ ] Add extramargin mixin to readme
 - [ ] Add basic html structure on example site. Consider if excluded in this project or not...
 
 ## Details
