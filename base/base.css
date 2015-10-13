@@ -280,6 +280,91 @@ main {
 .row.line {
   margin-bottom: 2.5rem; }
 
+/** ### Extra margins */
+.left5, .left5:only-child, .left5:first-child {
+  padding-left: 0.625rem;
+  margin-left: 5%; }
+
+.left10, .left10:only-child, .left10:first-child {
+  padding-left: 0.625rem;
+  margin-left: 10%; }
+
+.left15, .left15:only-child, .left15:first-child {
+  padding-left: 0.625rem;
+  margin-left: 15%; }
+
+.left20, .left20:only-child, .left20:first-child {
+  padding-left: 0.625rem;
+  margin-left: 20%; }
+
+.left25, .left25:only-child, .left25:first-child {
+  padding-left: 0.625rem;
+  margin-left: 25%; }
+
+.left30, .left30:only-child, .left30:first-child {
+  padding-left: 0.625rem;
+  margin-left: 30%; }
+
+.left33, .left33:only-child, .left33:first-child {
+  padding-left: 0.625rem;
+  margin-left: 33.33333%; }
+
+.left35, .left35:only-child, .left35:first-child {
+  padding-left: 0.625rem;
+  margin-left: 35%; }
+
+.left40, .left40:only-child, .left40:first-child {
+  padding-left: 0.625rem;
+  margin-left: 40%; }
+
+.left45, .left45:only-child, .left45:first-child {
+  padding-left: 0.625rem;
+  margin-left: 45%; }
+
+.left50, .left50:only-child, .left50:first-child {
+  padding-left: 0.625rem;
+  margin-left: 50%; }
+
+.left55, .left55:only-child, .left55:first-child {
+  padding-left: 0.625rem;
+  margin-left: 55%; }
+
+.left60, .left60:only-child, .left60:first-child {
+  padding-left: 0.625rem;
+  margin-left: 60%; }
+
+.left65, .left65:only-child, .left65:first-child {
+  padding-left: 0.625rem;
+  margin-left: 65%; }
+
+.left66, .left66:only-child, .left66:first-child {
+  padding-left: 0.625rem;
+  margin-left: 66.66667%; }
+
+.left70, .left70:only-child, .left70:first-child {
+  padding-left: 0.625rem;
+  margin-left: 70%; }
+
+.left75, .left75:only-child, .left75:first-child {
+  padding-left: 0.625rem;
+  margin-left: 75%; }
+
+.left80, .left80:only-child, .left80:first-child {
+  padding-left: 0.625rem;
+  margin-left: 80%; }
+
+.left85, .left85:only-child, .left85:first-child {
+  padding-left: 0.625rem;
+  margin-left: 85%; }
+
+.left90, .left90:only-child, .left90:first-child {
+  padding-left: 0.625rem;
+  margin-left: 90%; }
+
+.left95, .left95:only-child, .left95:first-child {
+  padding-left: 0.625rem;
+  margin-left: 95%; }
+
 h1 {
   color: #222222;
   margin: 0;
