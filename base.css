@@ -2,6 +2,9 @@
 @media screen and (max-width: 400px) {
   @viewport {
     width: 320px; } }
+/*=extramargin($paddingleft, $marginleft)
+ * padding-left: $paddingleft
+ * margin-left: $marginleft */
 * {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -251,122 +254,114 @@ main {
   margin-right: 0.625rem; }
 
 /* #### Lines */
-.col.line {
-  margin-bottom: 2.5rem; }
-
 .line {
   border: #EBEBEB solid;
     border-width: 0rem 0rem 0.125rem 0rem; }
-
-.thin {
-  border: #EBEBEB solid;
-    border-width: 0rem 0rem 0.0625rem 0rem; }
-
-.thick {
-  border: #EBEBEB solid;
-    border-width: 0rem 0rem 0.25rem 0rem; }
-
-.linedark {
-  border-color: #cccccc; }
-
-.linewhite {
-  border-color: #ffffff; }
-
-.top {
-  border: #EBEBEB solid;
-    border-width: 0.125rem 0rem 0rem 0rem; }
-
-.border {
-  border: #EBEBEB solid;
-    border-width: 0.125rem 0.125rem 0.125rem 0.125rem; }
-
-.row.line {
-  margin-bottom: 2.5rem; }
+  .line.thin {
+    border: #EBEBEB solid;
+      border-width: 0rem 0rem 0.0625rem 0rem; }
+  .line.thick {
+    border: #EBEBEB solid;
+      border-width: 0rem 0rem 0.25rem 0rem; }
+  .line.dark {
+    border-color: #cccccc; }
+  .line.white {
+    border-color: #ffffff; }
+  .line.top {
+    border: #EBEBEB solid;
+      border-width: 0.125rem 0rem 0rem 0rem; }
+  .line.border {
+    border: #EBEBEB solid;
+      border-width: 0.125rem 0.125rem 0.125rem 0.125rem; }
+  .line.col {
+    margin-bottom: 2.5rem; }
+  .line.row {
+    margin-bottom: 2.5rem; }
 
 /** ### Extra margins */
 .left5, .left5:only-child, .left5:first-child {
-  padding-left: 0.625rem;
-  margin-left: 5%; }
+  margin-left: 5%;
+  padding-left: 0.625rem; }
 
 .left10, .left10:only-child, .left10:first-child {
-  padding-left: 0.625rem;
-  margin-left: 10%; }
+  margin-left: 10%;
+  padding-left: 0.625rem; }
 
 .left15, .left15:only-child, .left15:first-child {
-  padding-left: 0.625rem;
-  margin-left: 15%; }
+  margin-left: 15%;
+  padding-left: 0.625rem; }
 
 .left20, .left20:only-child, .left20:first-child {
-  padding-left: 0.625rem;
-  margin-left: 20%; }
+  margin-left: 20%;
+  padding-left: 0.625rem; }
 
 .left25, .left25:only-child, .left25:first-child {
-  padding-left: 0.625rem;
-  margin-left: 25%; }
+  margin-left: 25%;
+  padding-left: 0.625rem; }
 
 .left30, .left30:only-child, .left30:first-child {
-  padding-left: 0.625rem;
-  margin-left: 30%; }
+  margin-left: 30%;
+  padding-left: 0.625rem; }
 
 .left33, .left33:only-child, .left33:first-child {
-  padding-left: 0.625rem;
-  margin-left: 33.33333%; }
+  margin-left: 33.33333%;
+  padding-left: 0.625rem; }
 
 .left35, .left35:only-child, .left35:first-child {
-  padding-left: 0.625rem;
-  margin-left: 35%; }
+  margin-left: 35%;
+  padding-left: 0.625rem; }
 
 .left40, .left40:only-child, .left40:first-child {
-  padding-left: 0.625rem;
-  margin-left: 40%; }
+  margin-left: 40%;
+  padding-left: 0.625rem; }
 
 .left45, .left45:only-child, .left45:first-child {
-  padding-left: 0.625rem;
-  margin-left: 45%; }
+  margin-left: 45%;
+  padding-left: 0.625rem; }
 
 .left50, .left50:only-child, .left50:first-child {
-  padding-left: 0.625rem;
-  margin-left: 50%; }
+  margin-left: 50%;
+  padding-left: 0.625rem; }
 
 .left55, .left55:only-child, .left55:first-child {
-  padding-left: 0.625rem;
-  margin-left: 55%; }
+  margin-left: 55%;
+  padding-left: 0.625rem; }
 
 .left60, .left60:only-child, .left60:first-child {
-  padding-left: 0.625rem;
-  margin-left: 60%; }
+  margin-left: 60%;
+  padding-left: 0.625rem; }
 
 .left65, .left65:only-child, .left65:first-child {
-  padding-left: 0.625rem;
-  margin-left: 65%; }
+  margin-left: 65%;
+  padding-left: 0.625rem; }
 
 .left66, .left66:only-child, .left66:first-child {
-  padding-left: 0.625rem;
-  margin-left: 66.66667%; }
+  margin-left: 66.66667%;
+  padding-left: 0.625rem; }
 
 .left70, .left70:only-child, .left70:first-child {
-  padding-left: 0.625rem;
-  margin-left: 70%; }
+  margin-left: 70%;
+  padding-left: 0.625rem; }
 
 .left75, .left75:only-child, .left75:first-child {
-  padding-left: 0.625rem;
-  margin-left: 75%; }
+  margin-left: 75%;
+  padding-left: 0.625rem; }
 
 .left80, .left80:only-child, .left80:first-child {
-  padding-left: 0.625rem;
-  margin-left: 80%; }
+  margin-left: 80%;
+  padding-left: 0.625rem; }
 
 .left85, .left85:only-child, .left85:first-child {
-  padding-left: 0.625rem;
-  margin-left: 85%; }
+  margin-left: 85%;
+  padding-left: 0.625rem; }
 
 .left90, .left90:only-child, .left90:first-child {
-  padding-left: 0.625rem;
-  margin-left: 90%; }
+  margin-left: 90%;
+  padding-left: 0.625rem; }
 
 .left95, .left95:only-child, .left95:first-child {
-  padding-left: 0.625rem;
-  margin-left: 95%; }
+  margin-left: 95%;
+  padding-left: 0.625rem; }
 
 h1 {
   color: #222222;

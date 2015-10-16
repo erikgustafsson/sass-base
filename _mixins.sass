@@ -47,6 +47,14 @@
   -webkit-#{$vendorname}: #{$vendorvalue}
   #{$vendorname}: #{$vendorvalue}
 
-=extramargin($paddingleft, $marginleft)
+/*=extramargin($paddingleft, $marginleft)
   padding-left: $paddingleft
-  margin-left: $marginleft
+  margin-left: $marginleft*/
+
+=extramargin($margin, $percent: "%")
+  @if $margin == 33
+    $margin: 33.33333333333334
+  @else if $margin == 66
+    $margin: 66.666666666666667
+  margin-left: #{$margin}#{$percent}
+  padding-left: REM($gutter / 2)
