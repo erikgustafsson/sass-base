@@ -1,5 +1,5 @@
 /*
-Error: File to import not found or unreadable: variables_custom.
+Error: File to import not found or unreadable: ../variables_custom.
        Load paths:
          
         on line 49 of _variables_default.sass
@@ -75,4 +75,4 @@ base.sass:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: variables_custom.\A        Load paths:\A          \A         on line 49 of _variables_default.sass\A         from line 1 of base.sass\A \A 44: \A 45: .center\A 46:   float: none\A 47:   text-align: center\A 48:   margin-left: auto\A 49:   margin-right: auto\A 50: @import structure\A 51: \A 52: // The following is an example how to use the functions and mixins. See readme for more info\A 53: div.testtest\A 54:   width: REM(20)"; }
+  content: "Error: File to import not found or unreadable: ../variables_custom.\A        Load paths:\A          \A         on line 49 of _variables_default.sass\A         from line 1 of base.sass\A \A 44: \A 45: .center\A 46:   float: none\A 47:   text-align: center\A 48:   margin-left: auto\A 49:   margin-right: auto\A 50: @import structure\A 51: \A 52: // The following is an example how to use the functions and mixins. See readme for more info\A 53: div.testtest\A 54:   width: REM(20)"; }
