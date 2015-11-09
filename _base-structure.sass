@@ -83,6 +83,7 @@ main
   float: left
   width: 100%
 article[role="main"].col
+  +calcwidth(60%, REM($gutter * 2))
   +media-query($maxwidth: $tablet-large)
     +calcwidth(60%, REM($gutter-tablet * 2))
   +media-query($maxwidth: $mobile-large)
@@ -92,6 +93,7 @@ article[role="main"].col
     +calcwidth(100%, REM($gutter-mobile-small * 2))
 
 aside[role="complementary"].col
+  +calcwidth(40%, REM($gutter * 2))
   +media-query($maxwidth: $tablet-large)
     +calcwidth(40%, REM($gutter-tablet * 2))
   +media-query($maxwidth: $mobile-large)
