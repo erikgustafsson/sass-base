@@ -7,10 +7,18 @@ blockquote
   padding: 0 REM($gutter * 3)
   margin: 0
   &:before
-    content: '\201D'
-    content: "”"
+    content: "“"
     float: left
     margin-left: REM(-$gutter * 2.5)
+    margin-top: REM(-$gutter)
+    font-size: REM(80)
+    font-family: $font-family-quote-sign
+    display: block
+    height: 0
+  &:after
+    content: "”"
+    float: left
+    margin-right: REM(-$gutter * 2.5)
     margin-top: REM(-$gutter)
     font-size: REM(80)
     font-family: $font-family-quote-sign
