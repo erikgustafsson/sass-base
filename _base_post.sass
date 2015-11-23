@@ -4,9 +4,26 @@ article
     line-height: 1.2
   .preamble
     font-weight: bold
+  blockquote
+    line-height: 1.2
 aside
   .post-tag
     padding: REM(5) REM(10)
     background: RGBA($tag-bg, 0.1)
     float: left
     margin: 0 REM($gutter / 2) REM($gutter / 2) 0
+blockquote
+  font-family: $font-family-quote-body
+  font-size: REM(24)
+  line-height: 1.375
+  padding: 0 REM($gutter * 3)
+  margin: 0
+  &:before
+    content: "“"
+    float: left
+    margin-left: REM(-$gutter * 2.5)
+    margin-top: REM(-$gutter)
+    font-size: REM(80)
+    font-family: $font-family-quote-sign
+    display: block
+    height: 0
