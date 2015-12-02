@@ -19,29 +19,3 @@ aside
     background: RGBA($tag-bg, 0.1)
     float: left
     margin: 0 REM($gutter / 2) REM($gutter / 2) 0
-blockquote
-  font-family: $font-family-quote-body
-  font-size: REM(24)
-  line-height: 1.375
-  padding: 0 REM($gutter * 3)
-  margin: 0
-  +media-query($maxwidth: $mobile-medium)
-    padding: 0
-    padding-top: REM($gutter)
-    text-align: left
-    padding-left: REM(10)
-    line-height: 1.1
-  &:before
-    content: "“"
-    float: left
-    margin-left: REM(-$gutter * 2.5)
-    margin-top: REM(-$gutter)
-    font-size: REM(80)
-    font-family: $font-family-quote-sign
-    display: block
-    height: 0
-    +media-query($maxwidth: $mobile-medium)
-      margin-left: 0
-      margin-top: REM(-$gutter * 2.5)
-  footer
-    font-size: REM(18)

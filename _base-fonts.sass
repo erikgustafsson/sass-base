@@ -5,3 +5,37 @@ p
   +media-query($maxwidth: $mobile-medium)
     font-size: REM(20)
     line-height: 1.2
+blockquote
+  font-family: $font-family-quote-body
+  font-size: REM(24)
+  line-height: 1.375
+  padding: 0 REM($gutter * 3)
+  margin: 0
+  +media-query($maxwidth: $mobile-medium)
+    padding: 0
+    padding-top: REM($gutter)
+    text-align: left
+    padding-left: REM(10)
+    line-height: 1.1
+  &:before
+    content: "“"
+    float: left
+    margin-left: REM(-$gutter * 2.5)
+    margin-top: REM(-$gutter)
+    font-size: REM(80)
+    font-family: $font-family-quote-sign
+    display: block
+    height: 0
+    +media-query($maxwidth: $mobile-medium)
+      margin-left: 0
+      margin-top: REM(-$gutter * 2.5)
+  a, a:link, a:visited, a:active
+    text-decoration: none
+    &:hover
+      text-decoration: none
+  footer
+    font-size: REM(18)
+    margin-top: REM($gutter / 2)
+  +media-query($maxwidth: $mobile-large)
+    font-size: REM(22)
+    line-height: 1.2
