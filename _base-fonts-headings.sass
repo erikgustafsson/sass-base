@@ -1,39 +1,40 @@
+h1, h2, h3, h4, h5
+  font-weight: normal
 h1
+  font-size: REM(69)
   color: $font-color-heading
-  margin: 0
-  font-size: REM($base * 2.5)
   line-height: 1.1
-  margin-bottom: REM($gutter * 0.8125)
-  html.touch &
-    +media-query($maxwidth: $mobile-large)
-      font-size: REM($base * 2.5)
-      line-height: 2.6
-
+  margin: 0 0 0 REM($gutter)
+  +media-query($maxwidth: $mobile-large)
+    font-size: REM(59)
+    line-height: 2.6
+  +media-query($maxwidth: $mobile-medium)
+    font-size: REM(45)
+  +media-query($maxwidth: $mobile-small)
+    font-size: REM(35)
 h2
   color: $font-color-heading
   margin: 0
-  font-size: REM($base * 1.875)
-  line-height: 1.6
+  font-size: REM(64)
+  line-height: 0.8
   &.line
     padding-bottom: REM($gutter * 0.625)
-  html.touch &
-    +media-query($maxwidth: $mobile-large)
-      font-size: REM($base * 1.5)
-      line-height: 1.1
+  +media-query($maxwidth: $mobile-large)
+    font-size: REM($base * 1.5)
+    line-height: 1.1
 h3
   color: $font-color-heading
   margin: 0
-  font-size: REM($base * 1.1255)
-  line-height: 1
+  font-size: REM(32)
+  line-height: 1.2
   margin-bottom: REM($gutter)
   &.line
-    padding-bottom: REM($base * 0.4)
+    padding-bottom: REM($gutter / 2)
   &.row.line
     margin-bottom: REM($base)
-  html.touch &
-    +media-query($maxwidth: $mobile-large)
-      font-size: REM($base * 1.5)
-      line-height: 1.25
+  +media-query($maxwidth: $mobile-large)
+    font-size: REM($base * 1.5)
+    line-height: 1.25
 h4
   color: $font-color-heading
   margin: 0
