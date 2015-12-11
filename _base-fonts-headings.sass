@@ -5,11 +5,19 @@ h1
   color: $font-color-heading
   line-height: 1.1
   margin: 0 0 REM($gutter) 0
-  +media-query($maxwidth: $mobile-large)
+  +media-query($maxwidth: $tablet-large)
+    margin: 0 0 REM($gutter-tablet-large) 0
+  +media-query($maxwidth: $tablet-medium)
+    margin: 0 0 REM($gutter-tablet-medium) 0
+  +media-query($maxwidth: $tablet-small)
+    margin: 0 0 REM($gutter-tablet-small) 0
     font-size: REM(59)
+    margin: 0 0 REM($gutter-mobile-large) 0
   +media-query($maxwidth: $mobile-medium)
     font-size: REM(45)
+    margin: 0 0 REM($gutter-mobile-medium) 0
   +media-query($maxwidth: $mobile-small)
+    margin: 0 0 REM($gutter-mobile-small) 0
     font-size: REM(35)
 h2
   color: $font-color-heading
@@ -18,32 +26,91 @@ h2
   line-height: 0.8
   &.line
     padding-bottom: REM($gutter * 0.625)
-  +media-query($maxwidth: $mobile-large)
-    font-size: REM($base * 1.5)
-    line-height: 1.1
+    +media-query($maxwidth: $tablet-large)
+      padding-bottom: REM($gutter-tablet-large * 0.625)
+    +media-query($maxwidth: $tablet-medium)
+      padding-bottom: REM($gutter-tablet-medium * 0.625)
+    +media-query($maxwidth: $tablet-small)
+      padding-bottom: REM($gutter-tablet-small * 0.625)
+    +media-query($maxwidth: $mobile-large)
+      padding-bottom: REM($gutter-mobile-large * 0.625)
+      font-size: REM($base * 1.5)
+      line-height: 1.1
+    +media-query($maxwidth: $mobile-medium)
+      padding-bottom: REM($gutter-mobile-medium * 0.625)
+    +media-query($maxwidth: $mobile-small)
+      padding-bottom: REM($gutter-mobile-small * 0.625)
 h3
   color: $font-color-heading
   margin: 0
   font-size: REM(32)
   line-height: 1.2
   margin-bottom: REM($gutter)
+  +media-query($maxwidth: $tablet-large)
+    margin-bottom: REM($gutter-tablet-large)
+  +media-query($maxwidth: $tablet-medium)
+    margin-bottom: REM($gutter-tablet-medium)
+  +media-query($maxwidth: $tablet-small)
+    margin-bottom: REM($gutter-tablet-small)
+  +media-query($maxwidth: $mobile-large)
+    margin-bottom: REM($gutter-mobile-large)
+    font-size: REM($base * 1.5)
+    line-height: 1.25
+  +media-query($maxwidth: $mobile-medium)
+    margin-bottom: REM($gutter-mobile-medium)
+  +media-query($maxwidth: $mobile-small)
+    margin-bottom: REM($gutter-mobile-small)
   &.line
     padding-bottom: REM($gutter / 2)
   &.row.line
-    margin-bottom: REM($base)
-  +media-query($maxwidth: $mobile-large)
-    font-size: REM($base * 1.5)
-    line-height: 1.25
+    margin-bottom: REM($gutter)
+    +media-query($maxwidth: $tablet-large)
+      margin-bottom: REM($gutter-tablet-large)
+    +media-query($maxwidth: $tablet-medium)
+      margin-bottom: REM($gutter-tablet-medium)
+    +media-query($maxwidth: $tablet-small)
+      margin-bottom: REM($gutter-tablet-small)
+    +media-query($maxwidth: $mobile-large)
+      margin-bottom: REM($gutter-mobile-large)
+    +media-query($maxwidth: $mobile-medium)
+      margin-bottom: REM($gutter-mobile-medium)
+    +media-query($maxwidth: $mobile-small)
+      margin-bottom: REM($gutter-mobile-medium)
+
 h4
   color: $font-color-heading
   margin: 0
   font-size: REM($base * 0.9375)
   line-height: 0.8
   margin-bottom: REM($gutter)
+  +media-query($maxwidth: $tablet-large)
+    margin-bottom: REM($gutter-tablet-large)
+  +media-query($maxwidth: $tablet-medium)
+    margin-bottom: REM($gutter-tablet-medium)
+  +media-query($maxwidth: $tablet-small)
+    margin-bottom: REM($gutter-tablet-small)
+  +media-query($maxwidth: $mobile-large)
+    margin-bottom: REM($gutter-mobile-large)
+  +media-query($maxwidth: $mobile-medium)
+    margin-bottom: REM($gutter-mobile-medium)
+  +media-query($maxwidth: $mobile-small)
+    margin-bottom: REM($gutter-mobile-small)
   &.line
     margin: 0
   .row.line
     margin-bottom: REM($gutter * 0.875)
+    +media-query($maxwidth: $tablet-large)
+      margin-bottom: REM($gutter-tablet-large * 0.875)
+    +media-query($maxwidth: $tablet-medium)
+      margin-bottom: REM($gutter-tablet-medium * 0.875)
+    +media-query($maxwidth: $tablet-small)
+      margin-bottom: REM($gutter-tablet-small * 0.875)
+    +media-query($maxwidth: $mobile-large)
+      margin-bottom: REM($gutter-mobile-large * 0.875)
+    +media-query($maxwidth: $mobile-medium)
+      margin-bottom: REM($gutter-mobile-medium * 0.875)
+    +media-query($maxwidth: $mobile-small)
+      margin-bottom: REM($gutter-mobile-small * 0.875)
 h5
   color: $font-color-heading
   margin: 0
@@ -51,8 +118,45 @@ h5
   line-height: 0.8
   margin-top: REM($gutter)
   margin-bottom: REM($gutter * 0.25)
+  +media-query($maxwidth: $tablet-large)
+    margin-top: REM($gutter-tablet-large)
+    margin-bottom: REM($gutter-tablet-large * 0.25)
+  +media-query($maxwidth: $tablet-medium)
+    margin-top: REM($gutter-tablet-medium)
+    margin-bottom: REM($gutter-tablet-medium * 0.25)
+  +media-query($maxwidth: $tablet-small)
+    margin-top: REM($gutter-tablet-small)
+    margin-bottom: REM($gutter-tablet-small * 0.25)
+  +media-query($maxwidth: $mobile-large)
+    margin-top: REM($gutter-mobile-large)
+    margin-bottom: REM($gutter-mobile-large * 0.25)
+  +media-query($maxwidth: $mobile-medium)
+    margin-top: REM($gutter-mobile-medium)
+    margin-bottom: REM($gutter-mobile-medium * 0.25)
+  +media-query($maxwidth: $mobile-small)
+    margin-top: REM($gutter-mobile-small)
+    margin-bottom: REM($gutter-mobile-small * 0.25)
   &.line
     margin: 0
     padding-bottom: REM($gutter * 0.3)
+    +media-query($maxwidth: $tablet-large)
+      padding-bottom: REM($gutter-tablet-large * 0.3)
+    +media-query($maxwidth: $tablet-medium)
+      padding-bottom: REM($gutter-tablet-medium * 0.3)
+    +media-query($maxwidth: $tablet-small)
+      padding-bottom: REM($gutter-tablet-small * 0.3)
+    +media-query($maxwidth: $mobile-large)
+      padding-bottom: REM($gutter-mobile-large * 0.3)
+    +media-query($maxwidth: $mobile-medium)
+      padding-bottom: REM($gutter-mobile-medium * 0.3)
+    +media-query($maxwidth: $mobile-small)
+      padding-bottom: REM($gutter-mobile-small * 0.3)
   &:first-child
     margin-top: 0
+
+  +media-query($maxwidth: $tablet-large)
+  +media-query($maxwidth: $tablet-medium)
+  +media-query($maxwidth: $tablet-small)
+  +media-query($maxwidth: $mobile-large)
+  +media-query($maxwidth: $mobile-medium)
+  +media-query($maxwidth: $mobile-small)
