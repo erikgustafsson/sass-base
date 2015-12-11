@@ -22,13 +22,13 @@ blockquote
     line-height: 1.2
     padding: 0
     padding-top: REM($gutter-mobile-large)
-    padding-left: REM($gutter-mobile-large)
+    padding-left: 0
   +media-query($maxwidth: $mobile-medium)
     padding-top: REM($gutter-mobile-medium)
-    padding-left: REM($gutter-mobile-medium)
+    padding-left: 0
   +media-query($maxwidth: $mobile-small)
     padding-top: REM($gutter-mobile-small)
-    padding-left: REM($gutter-mobile-small)
+    padding-left: 0
   &:before
     content: "”"
     float: left
@@ -49,13 +49,13 @@ blockquote
       margin-top: REM(-$gutter-tablet-small)
     +media-query($maxwidth: $mobile-large)
       margin-left: 0
-      margin-top: REM(-$gutter-mobile-large * 0.625)
+      margin-top: REM(-$gutter-mobile-large * 2)
     +media-query($maxwidth: $mobile-medium)
       margin-left: 0
-      margin-top: REM(-$gutter-mobile-medium)
+      margin-top: REM(-$gutter-mobile-medium * 2)
     +media-query($maxwidth: $mobile-small)
       margin-left: 0
-      margin-top: REM(-$gutter-mobile-small)
+      margin-top: REM(-$gutter-mobile-small * 2)
   a, a:link, a:visited, a:active
     text-decoration: none
     &:hover
