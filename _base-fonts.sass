@@ -48,17 +48,14 @@ blockquote
       margin-left: REM(-$gutter-tablet-small * 2.5)
       margin-top: REM(-$gutter-tablet-small)
     +media-query($maxwidth: $mobile-large)
-      margin-left: REM(-$gutter-mobile-large * 2.5)
-      margin-top: REM(-$gutter-mobile-large)
-    +media-query($maxwidth: $mobile-medium)
-      margin-left: REM(-$gutter-mobile-medium * 2.5)
-      margin-top: REM(-$gutter-mobile-medium)
-    +media-query($maxwidth: $mobile-small)
-      margin-left: REM(-$gutter-mobile-small * 2.5)
-      margin-top: REM(-$gutter-mobile-small)
-    //+media-query($maxwidth: $mobile-large)
       margin-left: 0
       margin-top: REM(-$gutter-mobile-large * 0.625)
+    +media-query($maxwidth: $mobile-medium)
+      margin-left: 0
+      margin-top: REM(-$gutter-mobile-medium)
+    +media-query($maxwidth: $mobile-small)
+      margin-left: 0
+      margin-top: REM(-$gutter-mobile-small)
   a, a:link, a:visited, a:active
     text-decoration: none
     &:hover
