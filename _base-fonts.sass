@@ -12,9 +12,9 @@ blockquote
   margin: 0
   +media-query($maxwidth: $mobile-large)
     padding: 0
-    padding-top: REM($gutter)
+    padding-top: REM($gutter-mobile-large)
     text-align: left
-    padding-left: REM(10)
+    padding-left: REM($gutter-mobile-large)
     line-height: 1.1
   &:before
     content: "”"
@@ -27,7 +27,7 @@ blockquote
     height: 0
     +media-query($maxwidth: $mobile-large)
       margin-left: 0
-      margin-top: REM(-$gutter * 2.5)
+      margin-top: REM(-$gutter-mobile-large * 0.625)
   a, a:link, a:visited, a:active
     text-decoration: none
     &:hover
