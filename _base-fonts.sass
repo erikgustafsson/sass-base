@@ -10,12 +10,25 @@ blockquote
   line-height: 1.375
   padding: 0 REM($gutter * 3)
   margin: 0
+  +media-query($maxwidth: $tablet-large)
+    padding: 0 REM($gutter-tablet-large * 3)
+  +media-query($maxwidth: $tablet-medium)
+    padding: 0 REM($gutter-tablet-medium * 3)
+  +media-query($maxwidth: $tablet-small)
+    padding: 0 REM($gutter-tablet-small * 3)
   +media-query($maxwidth: $mobile-large)
+    text-align: left
+    font-size: REM(22)
+    line-height: 1.2
     padding: 0
     padding-top: REM($gutter-mobile-large)
-    text-align: left
     padding-left: REM($gutter-mobile-large)
-    line-height: 1.1
+  +media-query($maxwidth: $mobile-medium)
+    padding-top: REM($gutter-mobile-medium)
+    padding-left: REM($gutter-mobile-medium)
+  +media-query($maxwidth: $mobile-small)
+    padding-top: REM($gutter-mobile-small)
+    padding-left: REM($gutter-mobile-small)
   &:before
     content: "”"
     float: left
@@ -25,7 +38,25 @@ blockquote
     font-family: $font-family-quote-sign
     display: block
     height: 0
+    +media-query($maxwidth: $tablet-large)
+      margin-left: REM(-$gutter-tablet-large * 2.5)
+      margin-top: REM(-$gutter-tablet-large)
+    +media-query($maxwidth: $tablet-medium)
+      margin-left: REM(-$gutter-tablet-medium * 2.5)
+      margin-top: REM(-$gutter-tablet-medium)
+    +media-query($maxwidth: $tablet-small)
+      margin-left: REM(-$gutter-tablet-small * 2.5)
+      margin-top: REM(-$gutter-tablet-small)
     +media-query($maxwidth: $mobile-large)
+      margin-left: REM(-$gutter-mobile-large * 2.5)
+      margin-top: REM(-$gutter-mobile-large)
+    +media-query($maxwidth: $mobile-medium)
+      margin-left: REM(-$gutter-mobile-medium * 2.5)
+      margin-top: REM(-$gutter-mobile-medium)
+    +media-query($maxwidth: $mobile-small)
+      margin-left: REM(-$gutter-mobile-small * 2.5)
+      margin-top: REM(-$gutter-mobile-small)
+    //+media-query($maxwidth: $mobile-large)
       margin-left: 0
       margin-top: REM(-$gutter-mobile-large * 0.625)
   a, a:link, a:visited, a:active
@@ -35,6 +66,15 @@ blockquote
   footer
     font-size: REM(18)
     margin-top: REM($gutter / 2)
-  +media-query($maxwidth: $mobile-large)
-    font-size: REM(22)
-    line-height: 1.2
+    +media-query($maxwidth: $tablet-large)
+      margin-top: REM($gutter-tablet-large / 2)
+    +media-query($maxwidth: $tablet-medium)
+      margin-top: REM($gutter-tablet-medium / 2)
+    +media-query($maxwidth: $tablet-small)
+      margin-top: REM($gutter-tablet-small / 2)
+    +media-query($maxwidth: $mobile-large)
+      margin-top: REM($gutter-mobile-large / 2)
+    +media-query($maxwidth: $mobile-medium)
+      margin-top: REM($gutter-mobile-medium / 2)
+    +media-query($maxwidth: $mobile-small)
+      margin-top: REM($gutter-mobile-small / 2)
