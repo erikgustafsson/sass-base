@@ -5,51 +5,6 @@
   float: none !important /* !important since this element should never be floated */
   &.hero
     max-width: 100%
-//[role="group"]
-  float: left
-  margin-left: REM($gutter / 2)
-  margin-right: REM($gutter / 2)
-  +calcwidth(100%, REM($gutter))
-  +media-query($maxwidth: $tablet-large)
-    +calcwidth(100%, REM($gutter-tablet-large))
-    margin-left: REM($gutter-tablet-large / 2)
-    margin-right: REM($gutter-tablet-large / 2)
-  +media-query($maxwidth: $tablet-medium)
-    +calcwidth(100%, REM($gutter-tablet-medium))
-    margin-left: REM($gutter-tablet-medium / 2)
-    margin-right: REM($gutter-tablet-medium / 2)
-  +media-query($maxwidth: $tablet-small)
-    +calcwidth(100%, REM($gutter-tablet-small))
-    margin-left: REM($gutter-tablet-small / 2)
-    margin-right: REM($gutter-tablet-small / 2)
-  +media-query($maxwidth: $mobile-large)
-    +calcwidth(100%, REM($gutter-mobile-large))
-    margin-left: REM($gutter-mobile-large / 2)
-    margin-right: REM($gutter-mobile-large / 2)
-  +media-query($maxwidth: $mobile-medium)
-    +calcwidth(100%, REM($gutter-mobile-medium))
-    margin-left: REM($gutter-mobile-medium / 2)
-    margin-right: REM($gutter-mobile-medium / 2)
-  +media-query($maxwidth: $mobile-small)
-    +calcwidth(100%, REM($gutter-mobile-small))
-    margin-left: REM($gutter-mobile-small / 2)
-    margin-right: REM($gutter-mobile-small / 2)
-  &:not(.container)
-    margin-bottom: REM($gutter * 2)
-    +media-query($maxwidth: $tablet-large)
-      margin-bottom: REM($gutter-tablet-large * 2)
-    +media-query($maxwidth: $tablet-medium)
-      margin-bottom: REM($gutter-tablet-medium * 2)
-    +media-query($maxwidth: $tablet-small)
-      margin-bottom: REM($gutter-tablet-small * 2)
-    +media-query($maxwidth: $mobile-large)
-      margin-bottom: REM($gutter-mobile-large * 2)
-    +media-query($maxwidth: $mobile-medium)
-      margin-bottom: REM($gutter-mobile-medium * 2)
-    +media-query($maxwidth: $mobile-small)
-      margin-bottom: REM($gutter-mobile-small * 2)
-  &.nomargin:not(.container)
-    margin: 0
 main
   overflow: hidden
 
