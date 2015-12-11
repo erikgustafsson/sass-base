@@ -54,3 +54,15 @@
     $margin: 66.666666666666667
   margin-left: #{$margin}#{$percent}
   padding-left: REM($gutter / 2)
+  +media-query($maxwidth: $tablet-large)
+    padding-left: REM($gutter-tablet-large / 2)
+  +media-query($maxwidth: $tablet-medium)
+    padding-left: REM($gutter-tablet-mediumr / 2)
+  +media-query($maxwidth: $tablet-small)
+    padding-left: REM($gutter-tablet-small / 2)
+  +media-query($maxwidth: $mobile-large)
+    padding-left: REM($gutter-mobile-large / 2)
+  +media-query($maxwidth: $mobile-medium)
+    padding-left: REM($gutter-mobile-medium / 2)
+  +media-query($maxwidth: $mobile-small)
+    padding-left: REM($gutter-mobile-small / 2)
